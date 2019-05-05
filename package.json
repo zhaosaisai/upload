@@ -1,0 +1,19 @@
+{
+  "name": "upload",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "koa": "^2.7.0",
+    "koa-body": "^4.1.0",
+    "koa-router": "^7.4.0",
+    "uuid": "^3.3.2"
+  },
+  "scripts": {
+    "dev": "nodemon index.js",
+    "stop": "pm2 stop ecosystem.config.js",
+    "start": "pm2 start ecosystem.config.js",
+    "restart": "pm2 restart ecosystem.config.js",
+    "prod": "yarn install && yarn run stop && yarn run start"
+  }
+}
