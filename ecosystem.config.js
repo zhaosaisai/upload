@@ -12,9 +12,7 @@ module.exports = {
     env_production: {
       NODE_ENV: 'production'
     },
-    log_date_format: 'YYYY-MM-DD HH:mm:ss',
-    output: './logs/out.log',
-    error: './logs/error.log'
+    log_date_format: 'YYYY-MM-DD HH:mm:ss'
   }],
   deploy: {
     production: {
