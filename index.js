@@ -1,5 +1,6 @@
 const path = require('path')
 const fs = require('fs')
+const os = require('os')
 const Koa = require('koa')
 const koaBody = require('koa-body')
 const router = require('koa-router')()
@@ -7,7 +8,7 @@ const uuid = require('uuid/v1')
 
 const app = new Koa()
 const port = process.env.NODE_PORT || 8989
-const artifact = path.resolve(__dirname, 'artifacts')
+const artifact = path.resolve(os.homedir(), '.artifacts')
 const log = console.log.bind(console)
 
 ensureArtifact(artifact)
